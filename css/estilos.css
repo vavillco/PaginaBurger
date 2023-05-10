@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@200;300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  font-family: "Comme", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*  HEADER  */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  font-size: 1.3vw;
+  padding: 0px 10px;
+}
+
+.header a {
+  color: rgb(77, 77, 77); /* HERNAN - Aca cambie el color de base que era blanco por gris */
+   padding-left: 1vw ;
+}
+
+.header a:hover {
+  animation-name: cambiarColor; /* HERNAN - Aca Agregue la Animacion para realizar la transicion de color */
+  animation-duration: 5s;
+  
+}
+
+nav img {
+  width: 7vw;
+  height: auto;
+
+}
+
+nav ul {
+  float: right;
+}
+
+
+
+/*  BODY > CONTENEDOR */ 
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  background-color: black;
+}
+
+section h2 {
+  font-size: 3vw;
+  color: red;
+  text-align: center;
+}
+
+section p{
+  color: white;
+}
+
+section img{
+  max-height: 35vw;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+
+  gap: 5px;
+  min-width: 100vw;
+} 
+
+
+/* divs que contienen las fotos y textoxs*/ 
+
+.contenedor .main > div {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* primera imagen */ 
+.contenido1 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+  position: relative;
+  z-index: -1;
+}
+
+.contenido1 img {
+  width: 100vw;
+}
+
+.contenido1 h1 {
+  top: 25%;
+  left: 17%;
+  position: absolute;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.contenido1 p {
+  font-size: 2vw;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+.contenedorMenu {
+  /* max-width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.imagencontenido {
+  width: 100%;
+  
+}
+
+.contenidoparrafo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+}
+
+.titulo-contenido {
+  
+  align-self: center;
+  text-align: center;
+}
+
+.titulo-contenido h1 {
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+
+.menu h1{
+  padding-left: 10px;
+  color: white;
+}
+
+/* Al pasar el mouse por las imagenes de index.html, opaca la imagen con el fin de que el usuario se de cuenta que es un link */
+.contenido2 img:hover, .contenido3 img:hover {
+  opacity: 0.8;
+}
+
+
+/* Le pone color blanco al fondo del damero en index.html */
+.contenido2, .contenido3, .titulo-contenido {
+  background-color: white;
+}
+
+/*  FOOTER  */ 
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer .container {
+  background-color: #8d8485;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*******Pag Sucursales*****/
+
+.contenido1 .tituloSuc {
+  text-align: center;
+  font-size: 5vw;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+  color: #ffffff;
+}
+
+.contenido1 .parraforSuc {
+  top: 60%;
+  left: 45%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mapas{
+  padding:3%;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ColLeft1 , .ColLeft2 h1 {
+    text-align: center;
+}
+
+.ColLeft2 h2 {
+  text-align: center;
+  color: #8d8485;
+  font-size: 100%;
+}
+
+.ColLeft1 h2 {
+  text-align: center;
+  color: #8d8485;
+  font-size: 100%;
+}
+
+.ColLeft2 p {
+  text-align: center;
+  padding: 3vw;
+  position: relative;
+  color: #000000;
+}
+.ColLeft1 p {
+  text-align: center;
+  padding: 3vw;
+  position: relative;
+  color: #000000;
+}
+.ColLeft1 , .ColLeft2 {
+  background-color:  #d7e4d9
+}
+
+/*******Fin Sucursales****/
+
+
+
+
+/*** Menu ****/
+.contenido1 .h1Menu{
+  left: 20%;
+  text-align: center;
+
+}
+
+/*****Fin Menu*****/
+
+
+
+/* ****************************************************************** */
+/* INICIO de los Mediaqueries para la pagina de Menu */
+@media (min-width:600px) {
+  .columnasMenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .columnasMenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+/* FIN de los Mediaqueries para la pagina de Menu */
+
+/* ****************************************************** */
+
+/* INICIO de los Mediaqueries para la pagina HOME */
+@media only screen and (max-width: 594px) {
+  .contenedor .main > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contenido2 .titulo-contenido {
+    order: -1;
+  }
+  .contenidoparrafo {
+    font-size: 3vw;
+    width: 60vw;
+  }
+  .titulo-contenido h1 {
+    font-size: 4vw;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  .header img {
+   display: none;
+  }
+  .header {
+   flex-direction: row;
+   justify-content: center;
+  }
+}
+/* FIN de los Mediaqueries para la pagina HOME */
+/* ****************************************************** */
+
+/* HERNAN - Agregue el Keyframe para que se logue la transicion entre colores del NAV*/
+@keyframes cambiarColor {
+  from {color: rgb(77, 77, 77);}
+  to {color: white;}
+}
+
+
+/* MQ para SUCURSALES */
+
+@media only screen and (max-width: 600px){ 
+  .mapas{
+    grid-template-columns: repeat(1,1fr);
+
+  }
+  .ColLeft1 , .ColLeft2 h1 {
+    text-align: center;
+    font-size: 80%;
+  }
+
+  .ColLeft1 , .ColLeft2 h2 {
+    text-align: center;
+    font-size: 70%;
+  }
+
+  .ColLeft1 , .ColLeft2 p {
+    text-align: center;
+    padding: 1vw;
+    font-size: 70%;
+  }
+
+  body .main .contenido1 h1 {
+    font-size: 7vw;
+    text-align: center;
+    left: 13%;
+  }
+
+  body .main .contenido1 p {
+   display: none;
+  }
+
+}

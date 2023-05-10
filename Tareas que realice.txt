@@ -1,0 +1,25 @@
+Sabado 06/05/2023
+
+1 - Cree un archivo script.js en el que almacene tanto el Header como el Footer en un Template-String para no tener que agregarlo en cada pagina. De este modo, con 1 funcion accedes al Header y al Footer en cada Pagina. Si hay que reemplazar algo de estos, solo se cambia en 1 solo lado, en el JS.
+2 - Reemplace los logos de redes sociales por unos de Fontawesome porque no logre que funcionara con el Template-String del JS
+3 - Cree 2 paginas para hamburguesas y cervezas y las linkee al Index.
+4 - Ordene el codigo en estilos.css para que todas las paginas sean Responvive 100% en 3 tramos
+5 - Meti los archivos css, img y js en sus respectivas carpetas (como le gusta al profe jajaja)
+6 - Quite del Nav, el link "Menu" y puse los links en las imagenes de la Hamburguesa y de la Cerveza a cada pagina... Esto no se... Ustedes comenten que les parece, pero no sabia como resolver los 2 menu y se me ocurrio eso...
+
+Martes 09/05/2023
+7 - Unifique las 2 paginas de menu en uno solo y se pueden acceder mediante las imagenes del home en forma directa con los #Anclajes y, tambien, desde el NAV.
+8 - Modifique las Mediaqueries para que haya 2: 1 para el home y otra para el menu
+9 - Hice que al pasar el mouse sobre las imagenes de las Hamburguesas y de las Cervezas del Home, se opaquen para que el usuario entienda que hay un link alli.
+
+
+(idea de prologo para la pagina de QUIENES SOMOS)
+Prologo Web:
+
+¡Bienvenidos a nuestra web de hamburguesas y cervezas artesanales! Aquí encontrarás todo lo que necesitas para satisfacer tus antojos de comida y bebida, con opciones deliciosas y únicas que no encontrarás en ningún otro lugar. Nuestro equipo se dedica a ofrecer los mejores ingredientes y las combinaciones más creativas para que puedas disfrutar de una experiencia gastronómica única.
+
+En nuestra web encontrarás menús completos con hamburguesas de todo tipo, desde clásicas hasta vegetarianas y veganas, así como una amplia variedad de cervezas artesanales que satisfarán incluso a los paladares más exigentes. También te ofrecemos una selección de acompañamientos y postres para que puedas completar tu experiencia.
+
+Nuestro compromiso con la calidad se refleja en cada plato que servimos, así que no dudes en consultarnos si tienes alguna pregunta sobre nuestros ingredientes o si necesitas alguna recomendación para elegir el plato perfecto.
+
+Gracias por visitar nuestra web, esperamos verte pronto en nuestro local para que puedas disfrutar de nuestras deliciosas hamburguesas y cervezas artesanales en persona. ¡Buen provecho!
