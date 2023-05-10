@@ -15,19 +15,20 @@
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
-  font-size: 1.3vw;
+  font-size: 1.8vw;
+  font-weight: bold;
   padding: 0px 10px;
 }
 
 .header a {
-  color: rgb(77, 77, 77); /* HERNAN - Aca cambie el color de base que era blanco por gris */
-   padding-left: 1vw ;
+  color: rgb(128, 128, 128); /* HERNAN - Aca cambie el color de base que era blanco por gris */
+   padding-right: 5vw ;
 }
 
+/* HERNAN - Aca Agregue la Animacion para realizar la transicion de color */
 .header a:hover {
-  animation-name: cambiarColor; /* HERNAN - Aca Agregue la Animacion para realizar la transicion de color */
-  animation-duration: 5s;
-  
+  animation: cambiarColor 1s;
+  animation-fill-mode: forwards 
 }
 
 nav img {
@@ -207,7 +208,7 @@ footer a {
   top: 60%;
   left: 45%;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .mapas{
@@ -263,7 +264,11 @@ footer a {
 
 /*****Fin Menu*****/
 
-
+/* HERNAN - Agregue el Keyframe para que se logue la transicion entre colores del NAV*/
+@keyframes cambiarColor {
+  from {color: rgb(77, 77, 77);}
+  to {color: white;}
+}
 
 /* ****************************************************************** */
 /* INICIO de los Mediaqueries para la pagina de Menu */
@@ -316,13 +321,6 @@ footer a {
 }
 /* FIN de los Mediaqueries para la pagina HOME */
 /* ****************************************************** */
-
-/* HERNAN - Agregue el Keyframe para que se logue la transicion entre colores del NAV*/
-@keyframes cambiarColor {
-  from {color: rgb(77, 77, 77);}
-  to {color: white;}
-}
-
 
 /* MQ para SUCURSALES */
 
