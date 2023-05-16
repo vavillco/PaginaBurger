@@ -25,6 +25,9 @@
    padding-right: 5vw ;
 }
 
+
+
+
 /* HERNAN - Aca Agregue la Animacion para realizar la transicion de color */
 .header a:hover {
   animation: cambiarColor 1s;
@@ -54,6 +57,11 @@ body {
 section h2 {
   font-size: 3vw;
   color: red;
+  text-align: center;
+}
+section h3 {
+  font-size: 2vw;
+  color: white;
   text-align: center;
 }
 
@@ -263,6 +271,23 @@ footer a {
 }
 
 /*****Fin Menu*****/
+
+/* Grid de QuienesSomos */
+
+.columnasQuienes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  
+}
+.contenedorQuienes {
+  /* max-width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+/* FIN Grid de QuienesSomos */
 
 /* HERNAN - Agregue el Keyframe para que se logue la transicion entre colores del NAV*/
 @keyframes cambiarColor {
