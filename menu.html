@@ -12,130 +12,128 @@
   <title>Página de BURGUERS</title>
 </head>
 
-<body>
+<div class="contenedor">
 
-  <div class="contenedor">
+  <!-- Aqui llamo al idheader de js para no repetir el Header en cada pagina. Se hizo con un Template-String -->
+  <header id="idheader"></header>
 
-    <!-- Aqui llamo al idheader de js para no repetir el Header en cada pagina. Se hizo con un Template-String -->
-    <header id="idheader"></header>
+  <body>
+    <div class="main">
 
-    <body>
-      <div class="main">
-
-        <!-- Deje este DIV fuera del Template String con el fin de poder asignar a cada pagina una imagen de Header distinta-->
-        <div class="contenido1">
-          <img src="img/menuHome.jpg">
-          <h1 class="h1Menu">Conoce el menu del dia</h1>
-        </div>
-
-        <div class="menu">
-          <h1>Nuestras Hamburguesas</h1>
-        </div>
-
-        <section>
-
-          <div class="contenedorMenu columnasMenu">
-
-            <article>
-              <h2>Setas</h2>
-              <img src="img/H1.png">
-              <p>Queso suizo, setas a la plancha sobre salsa de soja y mantequilla</p>
-            </article>
-
-            <article>
-              <h2>Queso</h2>
-              <img src="img/H2.png">
-              <p>Queso cheddar y el pan.</p>
-            </article>
-
-            <article>
-              <h2>Bacon</h2>
-              <img src="img/H3.png">
-              <p>Queso cheddar, lechuga, tomate y bacon.</p>
-            </article>
-
-            <article>
-              <h2>Pollo Crujiente</h2>
-              <img src="img/H7.png">
-              <p>Pollo aguacate y salsa barbacoa.</p>
-            </article>
-
-            <article>
-              <h2>Monster Egg</h2>
-              <img src="img/H5.png">
-              <p>Lechuga, tomate, cebolla roja, queso cheddar y huevo frito.</p>
-            </article>
-
-            <article>
-              <h2>Trufa</h2>
-              <img src="img/H6.png">
-              <p>Aceite de trufa, queso cheddar, bacon, lechuga, aguacate y cebolla caramelizada.</p>
-            </article>
-
-          </div>
-
-        </section>
-
-        <div class="menu">
-          <h1>Nuestras Cervezas</h1>
-        </div>
-
-        <section>
-
-          <div class="contenedorMenu columnasMenu">
-
-            <article>
-              <h2>Indian Pale Ale</h2>
-              <img src="img/cerveza1.png">
-              <p>Una cerveza amarga y fuerte con un alto contenido de lúpulo y alcohol. Las IPA se caracterizan por su
-                sabor a lúpulo y sus notas cítricas y frutales.</p>
-            </article>
-
-            <article>
-              <h2>Stout</h2>
-              <img src="img/cerveza2.png">
-              <p>Una cerveza oscura y rica, con un sabor a malta tostada y a veces a café o chocolate. Las cervezas
-                Stout suelen tener un contenido de alcohol más alto que otras cervezas.</p>
-            </article>
-
-            <article>
-              <h2>Belgian Dubbel</h2>
-              <img src="img/cerveza3.png">
-              <p>Una cerveza belga con un sabor a caramelo, especias y frutas oscuras. Las Dubbel suelen tener un
-                contenido de alcohol moderado.</p>
-            </article>
-
-            <article>
-              <h2>Hefeweizen</h2>
-              <img src="img/cerveza4.png">
-              <p>Una cerveza de trigo alemana con un sabor a plátano y clavo de olor. Las Hefeweizen suelen ser cervezas
-                ligeras y refrescantes.</p>
-            </article>
-
-            <article>
-              <h2>Saison</h2>
-              <img src="img/cerveza5.png">
-              <p>Una cerveza belga de verano con un sabor a especias y un toque de acidez. Las Saison suelen ser
-                cervezas ligeras y efervescentes.</p>
-            </article>
-
-            <article>
-              <h2>Amber Ale</h2>
-              <img src="img/cerveza6.png">
-              <p>Una cerveza de color cobrizo con sabor a malta tostada y notas de caramelo y frutas. Las Amber Ale
-                suelen tener un contenido de alcohol moderado y un amargor equilibrado.</p>
-            </article>
-
-          </div>
-        </section>
-
+      <!-- Deje este DIV fuera del Template String con el fin de poder asignar a cada pagina una imagen de Header distinta-->
+      <div class="contenido1">
+        <img src="img/menuHome.jpg">
+        <h1 class="h1Menu">Conoce el menu del dia</h1>
       </div>
 
-      <!-- Aqui llamo al ifooter de js para utilizar solo 1 Footer -->
-      <footer id="idfooter"> </footer>
+      <div class="menu">
+        <h1>Nuestras Hamburguesas</h1>
+      </div>
 
-      <script src="js/script.js"></script>
+      <section>
 
-    </body>
+        <div class="contenedorMenu columnasMenu">
+
+          <article>
+            <h2>Setas</h2>
+            <img src="img/H1.png">
+            <p>Queso suizo, setas a la plancha sobre salsa de soja y mantequilla</p>
+          </article>
+
+          <article>
+            <h2>Queso</h2>
+            <img src="img/H2.png">
+            <p>Queso cheddar y el pan.</p>
+          </article>
+
+          <article>
+            <h2>Bacon</h2>
+            <img src="img/H3.png">
+            <p>Queso cheddar, lechuga, tomate y bacon.</p>
+          </article>
+
+          <article>
+            <h2>Pollo Crujiente</h2>
+            <img src="img/H7.png">
+            <p>Pollo aguacate y salsa barbacoa.</p>
+          </article>
+
+          <article>
+            <h2>Monster Egg</h2>
+            <img src="img/H5.png">
+            <p>Lechuga, tomate, cebolla roja, queso cheddar y huevo frito.</p>
+          </article>
+
+          <article>
+            <h2>Trufa</h2>
+            <img src="img/H6.png">
+            <p>Aceite de trufa, queso cheddar, bacon, lechuga, aguacate y cebolla caramelizada.</p>
+          </article>
+
+        </div>
+
+      </section>
+
+      <div class="menu">
+        <h1>Nuestras Cervezas</h1>
+      </div>
+
+      <section>
+
+        <div class="contenedorMenu columnasMenu">
+
+          <article>
+            <h2>Indian Pale Ale</h2>
+            <img src="img/cerveza1.png">
+            <p>Una cerveza amarga y fuerte con un alto contenido de lúpulo y alcohol. Las IPA se caracterizan por su
+              sabor a lúpulo y sus notas cítricas y frutales.</p>
+          </article>
+
+          <article>
+            <h2>Stout</h2>
+            <img src="img/cerveza2.png">
+            <p>Una cerveza oscura y rica, con un sabor a malta tostada y a veces a café o chocolate. Las cervezas
+              Stout suelen tener un contenido de alcohol más alto que otras cervezas.</p>
+          </article>
+
+          <article>
+            <h2>Belgian Dubbel</h2>
+            <img src="img/cerveza3.png">
+            <p>Una cerveza belga con un sabor a caramelo, especias y frutas oscuras. Las Dubbel suelen tener un
+              contenido de alcohol moderado.</p>
+          </article>
+
+          <article>
+            <h2>Hefeweizen</h2>
+            <img src="img/cerveza4.png">
+            <p>Una cerveza de trigo alemana con un sabor a plátano y clavo de olor. Las Hefeweizen suelen ser cervezas
+              ligeras y refrescantes.</p>
+          </article>
+
+          <article>
+            <h2>Saison</h2>
+            <img src="img/cerveza5.png">
+            <p>Una cerveza belga de verano con un sabor a especias y un toque de acidez. Las Saison suelen ser
+              cervezas ligeras y efervescentes.</p>
+          </article>
+
+          <article>
+            <h2>Amber Ale</h2>
+            <img src="img/cerveza6.png">
+            <p>Una cerveza de color cobrizo con sabor a malta tostada y notas de caramelo y frutas. Las Amber Ale
+              suelen tener un contenido de alcohol moderado y un amargor equilibrado.</p>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Aqui llamo al ifooter de js para utilizar solo 1 Footer -->
+    <footer id="idfooter"> </footer>
+
+    <script src="js/script.js"></script>
+
+  </body>
 
 </html>

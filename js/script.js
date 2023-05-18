@@ -1,3 +1,4 @@
+// INICIO JS PARA HEADER Y FOOTER DE LAS PAGINAS
 document.getElementById("idheader").innerHTML = `
 <div class="header">
 <nav>
@@ -9,7 +10,7 @@ document.getElementById("idheader").innerHTML = `
   <a href="index.html"> INICIO</a>
   <a href="menu.html"> MENU</a>
   <a href="sucursales.html"> SUCURSALES</a>
-  <a href="delivery.html"> DELIVERY</a>
+  <a href="contacto.html"> CONTACTO</a>
   <a href="quienesSomos.html"> QUIENES SOMOS</a>
   </ul>  
 </nav>
@@ -27,3 +28,42 @@ document.getElementById("idfooter").innerHTML = `
 
 </div>
 `
+// FIN JS PARA HEADER Y FOOTER DE LAS PAGINAS
+// INICIO JS DE FORMULARIO DE CONTACTO.HTML
+const form = document.getElementById("contact-form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+
+function validateForm() {
+  if (nameInput.value.trim() === "") {
+    alert("Por favor, ingrese su nombre.");
+    return false;
+  }
+  
+  if (emailInput.value.trim() === "") {
+    alert("Por favor, ingrese su correo electrónico.");
+    return false;
+  }
+  
+  if (!isValidEmail(emailInput.value)) {
+    alert("Por favor, ingrese un correo electrónico válido.");
+    return false;
+  }
+  
+  return true;
+}
+
+function isValidEmail(email) {
+  // Una simple validación de correo electrónico usando una expresión regular
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+form.addEventListener("submit", function(event) {
+  if (!validateForm()) {
+    event.preventDefault();
+  }
+});
+
+// FIN JS DE FORMULARIO DE CONTACTO.HTML

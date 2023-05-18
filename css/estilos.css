@@ -25,9 +25,6 @@
    padding-right: 5vw ;
 }
 
-
-
-
 /* HERNAN - Aca Agregue la Animacion para realizar la transicion de color */
 .header a:hover {
   animation: cambiarColor 1s;
@@ -36,15 +33,12 @@
 
 nav img {
   width: 7vw;
-  height: auto;
-
+  height: auto; 
 }
 
 nav ul {
   float: right;
 }
-
-
 
 /*  BODY > CONTENEDOR */ 
 body {
@@ -91,7 +85,6 @@ section img{
   grid-template-columns: repeat(2, 1fr);
 }
 
-
 /* primera imagen */ 
 .contenido1 {
   width: 100%;
@@ -103,15 +96,16 @@ section img{
 }
 
 .contenido1 img {
-  width: 100vw;
+  width: 100vw;   
 }
 
 .contenido1 h1 {
-  top: 25%;
-  left: 17%;
-  position: absolute;
   text-align: center;
   font-size: 5vw;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+  color: #ffffff;
 }
 
 .contenido1 p {
@@ -130,8 +124,7 @@ section img{
 }
 
 .imagencontenido {
-  width: 100%;
-  
+  width: 100%;  
 }
 
 .contenidoparrafo {
@@ -140,8 +133,7 @@ section img{
   width: 30vw;
 }
 
-.titulo-contenido {
-  
+.titulo-contenido {  
   align-self: center;
   text-align: center;
 }
@@ -160,7 +152,6 @@ section img{
 .contenido2 img:hover, .contenido3 img:hover {
   opacity: 0.8;
 }
-
 
 /* Le pone color blanco al fondo del damero en index.html */
 .contenido2, .contenido3, .titulo-contenido {
@@ -202,15 +193,6 @@ footer a {
 }
 
 /*******Pag Sucursales*****/
-
-.contenido1 .tituloSuc {
-  text-align: center;
-  font-size: 5vw;
-  position: absolute;
-  top: 15%;
-  left: 23%;
-  color: #ffffff;
-}
 
 .contenido1 .parraforSuc {
   top: 60%;
@@ -259,18 +241,6 @@ footer a {
 }
 
 /*******Fin Sucursales****/
-
-
-
-
-/*** Menu ****/
-.contenido1 .h1Menu{
-  left: 20%;
-  text-align: center;
-
-}
-
-/*****Fin Menu*****/
 
 /* Grid de QuienesSomos */
 
@@ -381,3 +351,62 @@ footer a {
   }
 
 }
+/* INICIO CSS FORMULARIO DE CONTACTO.HTML */
+
+.formulario {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formulario__div {
+  width: 97%;
+}
+
+.formulario__titulo {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.formulario__label {
+  width: 200px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.formulario__campo {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.formulario__boton {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff4c4c;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #ff3333;
+}
+
+.formulario__boton:hover {
+  background-color: #ff6666;
+}
+/* FIN CSS FORMULARIO DE CONTACTO.HTML */
