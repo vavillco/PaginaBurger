@@ -8,14 +8,12 @@ document.getElementById("idheader").innerHTML = `
 
   <ul>
   <a href="index.html"> INICIO</a>
-  <a href="menu.html"> MENU</a>
-  <a href="sucursales.html"> SUCURSALES</a>
-  <a href="contacto.html"> CONTACTO</a>
-  <a href="quienesSomos.html"> QUIENES SOMOS</a>
-  <a href="indexAdmin.html"> Admin</a>
+  <a href="altas.html"> ALTAS</a>
+  <a href="listado.html"> LISTADO</a>
+  <a href="modificaciones.html"> MODIFICAR</a>
+  <a href="listadoEliminar.html"> ELIMINAR</a>
   <a href="carrito.html"> <img src="img/carrito.png" alt="carrito"></a>
-  </ul> 
-   
+  </ul>  
 </nav>
 </div>
 `
